@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: sample-kafka-service
+  kafka:
+    bootstrap-servers: localhost:29092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      transaction-id-prefix: tx-
+server:
+  port: 8083
